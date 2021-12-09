@@ -11,7 +11,7 @@ import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.phoenix.spark._
 
-class GmvApp {
+object GmvApp {
   def main(args: Array[String]): Unit = {
     //1.创建SparkConf
     val sparkConf: SparkConf = new SparkConf().setAppName("GmvApp").setMaster("local[*]")
